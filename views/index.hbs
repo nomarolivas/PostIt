@@ -1,0 +1,18 @@
+<main class="main-screen">
+
+{{#each results}}
+    <div class="card">
+        <div class="details">
+        <img src="/{{this.thumbnail}}" alt="">
+        
+        <p>{{this.title}}</p>
+        <a href="/posts/{{this.id}}">Details</a>
+        </div>
+       
+    </div>
+
+{{/each}}
+
+        
+</main>
+

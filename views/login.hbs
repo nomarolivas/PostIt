@@ -1,0 +1,19 @@
+<div class="log-in">
+    <h3>Login</h3>
+
+    <form id="login-form" class="input-form"
+    action="/users/login"
+    method="POST"
+    enctype="application/x-www-form-urlencoded">
+        <label for="Uname">Username:</label>
+        <input type="text" name="username"><br><br>
+        <label for="Pword">Password:</label>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+
+    <div class="register">
+     <button onclick="location.href = '/register';" id="registerButton" >Register Here</button>
+     </div>
+</div>
+

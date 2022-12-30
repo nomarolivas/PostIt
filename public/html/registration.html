@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+
+    
+</head>
+<body>
+
+
+    <header>
+        <h1>PostIt</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Register</a>
+            <a href="postimage.html">Post</a>
+            <a href="viewpost.html">View</a>
+        </nav>
+    
+    </header>
+
+
+<section>
+    <div class="register-form">
+    <h3>Registration Form</h3>
+    
+    <form id="form" onsubmit="submitForm">
+        <label for="enteredUsername">Username:</label>
+        <input id="enteredUsername" type="text" name="enteredUsername"><br><br>
+
+
+    <div class="invalid-letter"> 
+        <p id='not-letter-text' style = 'display: none'>Username must begin with a letter</p>     
+    </div>
+
+   
+        
+
+        <label for="email">Email:</label>
+        <input id="emailInput" type="email" name="email"><br><br>
+
+
+
+
+
+        <label for="Pword">Password:</label>
+        <input id="enteredPassword" type="password" name="Pword"><br><br>
+
+
+    <div class="message">
+        <p id="capital" style = 'display: none' class="invalid">Capital letter <b>Required</p>
+        <p id="number" style = 'display: none' class="invalid">Number <b>Required</b></p>
+        <p id="length" style = 'display: none' class="invalid">Minimum <b>8 characters</b></p>
+        <p id="specChar" style = 'display: none' class="invalid">Special Character Required : / * -+ !@ #$^& ~ []<b>
+        </b></p>
+        
+    </div>
+
+        <label for="Cpword">Confirm Password:</label>
+        <input id="enteredConfirmedPassword"  type="password" name="Cpword"><br><br>
+
+    <div class="confirmedPass">
+        <p id='passwordConfirmText' style = 'display: none'>Passwords do not match.</p>   
+     </div>
+
+
+
+        <div class="checkboxes">
+        
+        <input type="checkbox" id="ageCheck" name="confirm age" onclick="checkAge()">
+        <label for="Age">I confirm that I am 13+ years of age </label>
+
+        
+
+        <input type="checkbox" name="Accept Terms" id="termsCheck"  onclick="checkTerms()">
+        <label for="TOS/Privacy">I accept the   </label>
+
+        <a href="terms&privacy.comedu">TOS and Privacy Rules</a>
+    
+        <input id="submitAll" type="submit" value="Submit" onclick="submitForm()">
+    
+        </div>
+    
+        
+    </form>
+</div>
+</section>
+
+<footer>
+    <h5>Nomar Olivas @ 2022</h5>
+</footer>
+<script defer type="text/javascript" src="../js/validation.js"></script> 
+</body>
+</html>

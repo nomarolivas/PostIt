@@ -1,0 +1,54 @@
+
+<div class="register-form">
+    <h3>Registration Form</h3>
+    
+    <form id="form" onsubmit="submitForm"
+    method="POST"
+    action="/users/register"
+    enctype="application/x-www-form-urlencoded">
+        <label for="enteredUsername">Username:</label>
+        <input id="enteredUsername" type="text" name="username"><br><br>
+
+
+    <div class="invalid-letter"> 
+        <p id='not-letter-text' style = 'display: none'>Username must begin with a letter</p>     
+    </div>
+
+        <label for="email">Email:</label>
+        <input id="emailInput" type="email" name="email"><br><br>
+
+        <label for="Pword">Password:</label>
+        <input id="enteredPassword" type="password" name="password"><br><br>
+
+    <div class="message">
+        <p id="capital" style = 'display: none' class="invalid">Capital letter <b>Required</p>
+        <p id="number" style = 'display: none' class="invalid">Number <b>Required</b></p>
+        <p id="length" style = 'display: none' class="invalid">Minimum <b>8 characters</b></p>
+        <p id="specChar" style = 'display: none' class="invalid">Special Character Required : / * -+ !@ #$^& ~ []<b>
+        </b></p>        
+    </div>
+
+        <label for="Cpword">Confirm Password:</label>
+        <input id="enteredConfirmedPassword"  type="password" name="Cpassword"><br><br>
+
+    <div class="confirmedPass">
+        <p id='passwordConfirmText' style = 'display: none'>Passwords do not match.</p>   
+    </div>
+
+    <div class="checkboxes">
+        
+        <input type="checkbox" id="ageCheck" name="confirm age" onclick="checkAge()">
+        <label for="Age">I confirm that I am 13+ years of age </label>
+
+        <input type="checkbox" name="Accept Terms" id="termsCheck"  onclick="checkTerms()">
+        <label for="TOS/Privacy">I accept the   </label>
+
+        <a href="terms&privacy.comedu">TOS and Privacy Rules</a>
+    
+        <input id="submitAll" type="submit" value="Submit" onclick="submitForm()">
+    
+    </div>
+    
+    </form>
+</div>
+

@@ -1,0 +1,30 @@
+<div class="postImage">
+<div class="postImage-title">
+    <h3>Post an Image</h3>
+</div>
+    <div class="postImage-form">
+    <form id="postImages-front" class="input-form"
+    action="/posts/create"
+    method="post"
+    enctype="multipart/form-data">
+        <label for="Ptitle">Title:</label>
+        <input type="text" name="title"><br><br>
+
+        <label for="Pdescrep">Description:</label>
+        <input type="text" name="description"><br><br>
+
+    <div class="upload">
+        <label for="clientUpload">Select Photo to Upload: </label>
+        <input type="file" id="UploadImage" name="uploadImage">
+        <input type="checkbox" name="Accept Use" id="Accept">
+        <label for="Accept">I accept the Acceptable Use Policy</label>
+    
+    </div>
+        <input type="submit" value="Post">
+    </form>
+
+</div>
+</div>
+
+
+
