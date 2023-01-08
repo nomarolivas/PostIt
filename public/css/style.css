@@ -205,7 +205,9 @@ input[type=submit] {
   clear: both;
   float:left;
   padding-bottom: 30px;
+  margin-left: 80px;
   line-height: 40px;
+  display: inline;
 }
 
 footer{
