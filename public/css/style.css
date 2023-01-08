@@ -143,16 +143,33 @@ header nav a:hover{
   padding: 20px;
 }
 
-.checkboxes label {
-  display: inline;
-  padding-left: 4px;
+.not-letter-text{
+margin-right: 100px  !important;
 }
+
+
+.checkboxes {
+  display: inline;
+  font-weight:normal ;
+}
+
+.terms{
+padding-top: 10px;
+}
+
+
 
 input[type=submit] {
   margin-top: 20px;
   background-color: #87805E;
   color: white;
+
 }
+
+.confirmed{
+  font-weight: normal;
+}
+
 
 .postImage-form h4 {
   text-align: center;
@@ -216,7 +233,7 @@ padding-top: 200px;
   margin-top: -20px;
   color: red;
   font-size: 10.72px;
-  margin-left: 155px;
+  margin-left: 70px;
   display: none;
 }
 

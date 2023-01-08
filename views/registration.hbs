@@ -2,7 +2,7 @@
 <div class="register-form">
     <h3>Registration Form</h3>
     
-    <form id="form" onsubmit="submitForm"
+    <form id="form"  onsubmit="return stopSubmission(event)"
     method="POST"
     action="/users/register"
     enctype="application/x-www-form-urlencoded">
@@ -28,8 +28,10 @@
         </b></p>        
     </div>
 
+    <div class="confirmed">
         <label for="Cpword">Confirm Password:</label>
         <input id="enteredConfirmedPassword"  type="password" name="Cpassword"><br><br>
+    </div>
 
     <div class="confirmedPass">
         <p id='passwordConfirmText' style = 'display: none'>Passwords do not match.</p>   
@@ -40,12 +42,15 @@
         <input type="checkbox" id="ageCheck" name="confirm age" onclick="checkAge()">
         <label for="Age">I confirm that I am 13+ years of age </label>
 
+    <div class="terms">
         <input type="checkbox" name="Accept Terms" id="termsCheck"  onclick="checkTerms()">
         <label for="TOS/Privacy">I accept the   </label>
 
         <a href="terms&privacy.comedu">TOS and Privacy Rules</a>
+
+    </div>
     
-        <input id="submitAll" type="submit" value="Submit" onclick="submitForm()">
+        <input id="submitAll" type="submit" value="Submit" onclick="stopSubmission(event)">
     
     </div>
     
