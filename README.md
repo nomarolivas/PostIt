@@ -2,19 +2,21 @@
 
 Web-Based application, similar to tumblr, where a user can create an account, post pictures, view and comment on other’s posts. Implemented using HTML, CSS, JavaScript, NodeJS, ExpressJs, and SQL.
 
-# Build/Run Instructions
+# Preview
 
-## Building and running MySQL Database
-1. Inside the application folder, locate the confi folder
-2. Inside the confi folder, locate the file titled: postItDB.sql
-3. In MySQL workbench, open up local host server and open the file postItDB.sql inside of local host server.
-4. Execute the query for postItDB.sql and the server should be made.
+### Home Page
+![Screenshot 2023-01-07 at 7 03 47 PM](https://user-images.githubusercontent.com/41343085/211178700-f397ccea-cb04-4bec-8f40-f68e2ae9340c.png)
 
-## Build Instructions
-1. Inside of the terminal of the project, cd into the project's application folder
-2. After cd into the application folder, enter npm install in the terminal
+### Registration Page
+![Screenshot 2023-01-07 at 7 04 33 PM](https://user-images.githubusercontent.com/41343085/211178725-fd66b3e7-5f79-449d-9bd9-0b2e3115ec55.png)
 
-## Run Instructions
-1. Inside of the terminal of the project, cd into the project's application folder
-2. After cd into the application folder, enter npm start in the terminal
-3. After entering npm start, open any browser and enter http://localhost:3000/  .The project should now be loaded
+
+### LogIn Page
+![Screenshot 2023-01-07 at 7 04 18 PM](https://user-images.githubusercontent.com/41343085/211178714-9207bfcb-aaa8-49f9-85c8-cfef34c1718b.png)
+
+### Post Page
+![Screenshot 2023-01-07 at 7 05 16 PM](https://user-images.githubusercontent.com/41343085/211178742-80c5e2d1-0645-4a64-a17e-41b3f797aa2c.png)
+
+
+### Integreated Search 
+![Screenshot 2023-01-07 at 7 04 09 PM](https://user-images.githubusercontent.com/41343085/211178708-42898473-1fcd-48b8-a5e0-04f651ac92bd.png)
